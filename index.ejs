@@ -9,11 +9,11 @@
     <h1>Greeting Page </h1>
    
     <p> Hello there, <%=userName%>!</p>
-       
+       <h3><%= title %></h3>
    <ul>
 
         <% collectible.forEach((item,index) => { %>
-          <li>  <%= item.name  %> : <%= item.price %></li>   
+          <li> <a href="/collectible/"><%= item.name  %> : <%= item.price %> </a> </li>  
         <% }) %>
 
    

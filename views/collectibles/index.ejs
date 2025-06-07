@@ -10,7 +10,8 @@
      <ul>
 
         <% collectible.forEach((item,index) => { %>
-          <li>  <%= item.name  %> : <%= item.price %></li>   
+          <a href="/collectibles/<%= index %>"><%= item.name  %> : <%= item.price %></a>
+          <li>  </li>   
         <% }) %>
 
    
